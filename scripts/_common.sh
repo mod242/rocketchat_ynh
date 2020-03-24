@@ -1,7 +1,7 @@
 # common.sh
 
-ROCKETCHAT_VERSION=2.1.2
-ROCKETCHAT_SHASUM=a8443d0008b2bb1529a6749f728f737beadda3032c701b84df3fde1d96baeb96
+ROCKETCHAT_VERSION=3.0.4
+ROCKETCHAT_SHASUM=b1d6a7a95b7da1af0c5adc8f1e151a3a8ae008a75ac344284fdfbd887b1d3792
 ROCKETCHAT_DOWNLOAD_URI=https://releases.rocket.chat/${ROCKETCHAT_VERSION}/download
 NODE_VERSION=8.11.4
 DEBIAN_ISSUE=$(grep 9 /etc/debian_version >/dev/null && echo stretch || echo jessie)
