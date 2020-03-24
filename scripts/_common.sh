@@ -3,7 +3,7 @@
 ROCKETCHAT_VERSION=3.0.4
 ROCKETCHAT_SHASUM=b1d6a7a95b7da1af0c5adc8f1e151a3a8ae008a75ac344284fdfbd887b1d3792
 ROCKETCHAT_DOWNLOAD_URI=https://releases.rocket.chat/${ROCKETCHAT_VERSION}/download
-NODE_VERSION=8.11.4
+NODE_VERSION=12.14.0
 DEBIAN_ISSUE=$(grep 9 /etc/debian_version >/dev/null && echo stretch || echo jessie)
 
 checkcmd() {
@@ -34,7 +34,7 @@ waitforservice() {
 
 installnode(){
   if [ $DEBIAN_ISSUE == "stretch" ]; then
-    sudo curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+    sudo curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
     sudo bash nodesource_setup.sh
     sudo apt-get install -y nodejs
   else
