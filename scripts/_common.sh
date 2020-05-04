@@ -3,7 +3,7 @@
 ROCKETCHAT_VERSION=3.2.1
 ROCKETCHAT_SHASUM=7470ff82588a620ca93a4ff51224a1c03d98831bf4b8af050bbb024f4eecb5e1
 ROCKETCHAT_DOWNLOAD_URI=https://releases.rocket.chat/${ROCKETCHAT_VERSION}/download
-NODE_VERSION=12.14.0
+NODE_VERSION=12.16.0
 DEBIAN_ISSUE=$(grep 9 /etc/debian_version >/dev/null && echo stretch || echo jessie)
 
 checkcmd() {
